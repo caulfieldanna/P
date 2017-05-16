@@ -1,0 +1,102 @@
+*{
+	font-family: 'Ledger', serif;
+}
+
+body {
+	margin-left: 30px;
+}
+
+.task_1 h3 {
+	margin-bottom: 30px;
+}
+
+.task_1 p {
+	background-color: #FFC0CB;
+	margin-right: 720px;
+	padding: 5px;
+	margin-top: -14px;
+	border-radius: 5px;
+}
+
+.task_1 p:hover {
+	opacity: 0.7;
+}
+
+.task_3 p {
+	background-color: #FFC0CB;
+	margin-right: 720px;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.task_3 p:hover {
+	opacity: 0.8;
+	color: #000;
+}
+
+.task_4 p {
+	display: inline-block;
+	margin-right: 5px;
+	background-color: pink;
+	padding: 10px;
+	border-radius: 50%;
+	text-align: center;
+}
+
+.task_4 p:hover {
+	opacity: 0.7;
+}
+
+.task_6 table {
+	border-collapse: collapse;
+	position: relative;
+  	overflow: hidden;
+  	width: auto;
+	height: auto;
+}
+
+.task_6 tr {
+	text-align: center;
+	color: #000;
+}
+
+.task_6 td {
+	padding: 5px 2px;
+	border: 1px solid black;
+  	width: 30px;
+}
+
+.task_6 td:nth-child(1) {
+	font-weight: bold;
+}
+
+.task_6 tr:first-of-type {
+	font-weight: bold;
+}
+
+.task_6 td:hover {
+	background-color: #C0C0C0;
+}
+
+.task_6 tr:hover {
+  background-color:  #FFC0CB;
+}
+
+.task_8 p {
+	font-size: 0.8em;
+	margin: 5px;padding: 1px;
+}
+
+/*.task_8 p:hover {
+	border-bottom: 1px solid #000;
+}*/
+
+.task_8 b {
+	background-color:  #FFC0CB;
+	padding: 3px;
+	border-radius: 4px;
+}
+
+.task_8 b:hover {
+	opacity: 0.7;
+}
