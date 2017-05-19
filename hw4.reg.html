@@ -1,0 +1,82 @@
+<!-- 2. Подготовить форму (например форму регистрации).
+Помимо полей ввода, у формы должен быть чекбокс или радиокнопка.
+Данные, вносимые пользователем валидируются с помощью JavaSctipt -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HW-4</title>
+	<link rel="stylesheet" href="hw4.reg.css">
+	<script type="text/javascript">
+
+function validate_form ()
+{
+	valid = true;
+        if (document.registration.email.value == "")
+        {
+            alert ("Enter your name.");
+            valid = false;
+        }
+        if (document.registration.password.value == "")
+        {
+            alert ("Enter your password.");
+            valid = false;
+        }
+        // if ((document.registration.gender[0].checked == false) && (document.registration.gender[1].checked == false))
+        // {
+        //     alert ("Пожалуйста, выберите Ваш пол: Мужской или Женский");
+        //     valid = false;
+        // }
+        return valid;
+}
+</script>
+
+</head>
+<body>
+
+<!-- Authorization form-->
+<div class="authorization">
+<form name="registration" action="hw4.reg.html" onsubmit="return validate_form ( );">
+  <p class="email"><!-- Email  --><input type="text" name="email" placeholder="Email or phone number"></p>
+  <p class="password"><!-- Пароль  --><input type="password" name="password" placeholder="Password"></p>
+
+<script>
+  var form = document.querySelector("form");
+  console.log(form.elements[1].type);
+  // → password
+  console.log(form.elements.password.type);
+  // → password
+  console.log(form.elements.name.form == form);
+  // → true
+</script>
+
+<!-- <p>Ваш пол: <input type="radio" name="gender" value="Male"> Мужской
+<input type="radio" name="gender" value="Female"> Женский</p> -->
+
+<!-- Checkbox-->
+<div class="checkbox">
+<input type="checkbox" id="remember">
+<label for="remember">Remember</label>
+<br>
+</div>
+
+<div class="btn">
+<!-- Button -->
+<form action="hw4.reg.html">
+  <button type="submit">Sign in</button>
+</form>
+</div>
+
+<script>
+  var form = document.querySelector("form");
+  form.addEventListener("submit", function(event) {
+    console.log("Saving value", form.elements.value.value);
+    event.preventDefault();
+  });
+</script>
+</form>
+
+</div>
+</body>
+</html>

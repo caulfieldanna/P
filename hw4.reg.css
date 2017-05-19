@@ -1,0 +1,25 @@
+*{
+  box-sizing: border-box;
+}
+.authorization {
+  background-color: lightgoldenrodyellow;
+  width: 370px;
+  margin: 30px 30%;
+  padding: 30px 100px;
+}
+
+.checkbox {
+  background-color: rgba(0, 0, 0, 0.2);
+   width: 170px;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.checkbox:hover {
+  background-color: rgba(169, 0, 0, 0.4);
+}
+
+
+.btn {
+  margin-top: 40px
+}
