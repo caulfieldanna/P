@@ -12,7 +12,7 @@ PHP HW-2
 
 <body>
     
-<div class="task_1">
+<div class="task_1" id="task">
 	<?php
 	//Задание 1: Создать массив из дней недели. С помощью цикла foreach вывести все дни недели, а текущий день выведите жирным. Текущий день можно получить с помощью функции date Названия дней выводить по-русски 
 		echo '<h3>Массив из дней недели:</h3>';
@@ -25,15 +25,21 @@ PHP HW-2
 			'<p>Суббота</p>', 
 			'<p>Воскресенье</p>'];
 
-			$today = date("w");
+			$today = (int)date("N");
 
-			$today = ''; 
+			// for ($i=1; $i <= 7 ; $i++) { 
+			//  	if ($today == $i+1) {
+			//  		echo "<i>" . $arr[$i] . "</i><br>";
+			//  	} else {
 
-			foreach ($arr as $key => $elem) {
-				if (array_search($elem, $arr) == $today) {
-					echo '<b>'.$elem.'</b>';
+			//  	}
+			//  } 
+
+			foreach ($arr as $key => $value) {
+				if ($today == ($key + 1)) {
+					echo '<b>'.$value.'</b>';
 				} else {
-					echo $elem.'';
+					echo $value.'';
 				}
 			}
 		echo "<br>";
@@ -72,7 +78,7 @@ PHP HW-2
 </div>
 
 
-<div class="task_3">
+<div class="task_3" id="task">
 	<?php
 		// Задание 3: Создать переменную, присвоить ей значение - год. Используя тернарный оператор определить, високосный год или нет 
 		echo '<h3>Не високосный год:</h3>';
@@ -88,7 +94,7 @@ PHP HW-2
 	?>
 </div>
 
-<div class="task_4">
+<div class="task_4" id="task">
 	<?php
 		// Задание 4: Вывести все положительные числа, меньше 40, у которых есть хотя бы одна цифра 3 и которые не делятся на 5.
 		echo "<br>";
