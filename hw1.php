@@ -5,7 +5,9 @@ $num2 = (int)"87";
 echo $num1+$num2;
 echo $num1-$num2;
 echo $num1*$num2;
-echo $num1/$num2;
+
+echo $num1**$num2;
+echo $num1%$num2;
 
 //2. Даны два числа. Найдите сумму их квадратов. 
 
