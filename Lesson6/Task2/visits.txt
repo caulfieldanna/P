@@ -1,0 +1,15 @@
+2017-05-23 21:32:51
+127.0.0.1
+http://localhost:8000/Lesson6/Task2/visits.php
+2017-05-23 21:33:05
+127.0.0.1
+http://localhost:8000/Lesson6/Task2/visits.php
+2017-05-23 21:36:49
+127.0.0.1
+http://localhost:8000/Lesson6/Task2/visits.php
+2017-05-23 21:36:58
+127.0.0.1
+http://localhost:8000/Lesson6/Task2/site2.php
+2017-05-23 21:37:41
+127.0.0.1
+http://localhost:8000/Lesson6/Task2/site1.php
