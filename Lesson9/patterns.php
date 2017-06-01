@@ -65,4 +65,31 @@ class Model {}
 class View {}
 class Controllers {}
 class Router {} // index.php
+
+
+class User {
+	$id;
+	$name = 'Гость';
+	$pwd; 
+	$role;
+	// $rating;
+	$orderHistory;
+}
+
+class Account {
+	$auth_state; // статус авторизации
+	function getUserInfo() {} // информация внутри личного кабинета
+	function login() {
+		function registration() {}
+	}
+	function logout() {}
+
+}
+
 ?>
+
+
+/description
+or
+account/login
+контроллер/метод
