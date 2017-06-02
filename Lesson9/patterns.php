@@ -53,13 +53,43 @@ $user = new User();
 $order = new Order([], $user);
 */
 
-class Comments {} // комментарии
-class Goods {} // товары
-class DB {} // подключение к базе данных
-class Account {} // личный кабинет
-class Cart {} // корзина
-class Order {} // заказ
-class User {} // пользователь
+
+class Comments {
+	$user; // пользователь
+	$addComment; // добавить комм
+	$editComment; // изменить комм
+	$deleteComment; // удалить комм
+} // комментарии
+
+class Goods {
+	$name; // название 
+	$description; // описание
+	$number; //количество товара в наличии или $quantity;
+	$img; // изображение товара
+} // товары
+
+class DB {
+	$sendDB; // Отправить информацию в бд
+	$getDB; // получить информацию из бд
+} // подключение к базе данных
+
+class Account // см. ниже // личный кабинет
+
+class Cart {
+	$goodName; // название товара
+	$goodNumber; // кол-во товара 
+	$summOfGoods; // выводит сумму всех выбранных товаров в корзине
+} // корзина
+
+class Order {
+	$orderDescription; // описание
+	$orderPrice; // цена
+	$orderNumber; //кол-во
+	$img; // изображение товара
+} // заказ
+
+class User // см. ниже // пользователь
+
 
 class Model {}
 class View {}
@@ -83,13 +113,14 @@ class Account {
 		function registration() {}
 	}
 	function logout() {}
-
 }
 
+
+
+
+//description
+//or
+//account/login
+//контроллер/метод
+
 ?>
-
-
-/description
-or
-account/login
-контроллер/метод
