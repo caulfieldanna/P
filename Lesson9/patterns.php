@@ -73,7 +73,7 @@ class DB {
 	$getDB; // получить информацию из бд
 } // подключение к базе данных
 
-class Account // см. ниже // личный кабинет
+class Account {} // см. ниже // личный кабинет
 
 class Cart {
 	$goodName; // название товара
@@ -88,7 +88,7 @@ class Order {
 	$img; // изображение товара
 } // заказ
 
-class User // см. ниже // пользователь
+class User {} // см. ниже // пользователь
 
 
 class Model {}
@@ -122,5 +122,30 @@ class Account {
 //or
 //account/login
 //контроллер/метод
+
+
+// function func_name(WildAnimal, $animal) {
+	
+// }
+
+// function func_name($args=12, ) {
+
+// }
+
+// $arr = [
+// 	'key' => 'value',
+// ]
+
+// include 'qwe.php'; // если файла нет, не будет ошибки. он вставляет все содержимое файла qwe.php
+
+// session_id();
+
+// setcookie('name', 'value'); // установить куки
+// setcookie('name'); // удалить kуки ^
+// $_COOKIE // glob cook
+
+// session_start();
+// $_SESSION['name'] = 'name';
+
 
 ?>
