@@ -7,7 +7,7 @@
 	<?php if ($auth): ?>
 	<form id="comment_form">
 		<textarea title="Комментарий" name="" id="comment" cols="30" rows="10"></textarea>
-		<button type="submit">Оставить комментарий</button>
+		<button class="btn btn-1 btn-1e btn-1e2" type="submit">Оставить комментарий</button>
 	</form>
 
 	<?php else: ?>
