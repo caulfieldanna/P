@@ -47,6 +47,23 @@ function createTable($tablename) {
 }
 
 //createTable('users');
+//mysql>  CREATE TABLE goods(id INT AUTO_INCREMENT PRIMARY KEY, title VARCHAR ( 100 ) NOT NULL, description VARCHAR ( 250 ) NOT NULL, preview VARCHAR ( 250 ) NOT NULL, price VARCHAR ( 250 ) NOT NULL, count INT NOT NULL, article VARCHAR ( 100 ) NOT NULL);
+// ---- Query OK, 0 rows affected (0,03 sec)
+
+//mysql> CREATE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY, login VARCHAR ( 250 ) NOT NULL, hash VARCHAR ( 250 ) NOT NULL, email VARCHAR ( 250 ) NOT NULL, avatar VARCHAR ( 250 ) NOT NULL, role VARCHAR ( 250 ) NOT NULL);
+
+//INSERT INTO goods (title, description, preview, price, count, article) VALUES ('Guitar', 'Description', 'guitar.jpg', '1300', 12, '12345');
+
+//SELECT * FROM goods;
+/*
++----+--------+-------------+------------+-------+-------+---------+
+| id | title  | description | preview    | price | count | article |
++----+--------+-------------+------------+-------+-------+---------+
+|  1 | Guitar | Description | guitar.jpg | 1300  |    12 | 12345   |
+|  2 | Piano  | Description | piano.jpg  | 900   |     3 | 654378  |
++----+--------+-------------+------------+-------+-------+---------+
+2 rows in set (0,01 sec)
+*/
 
 
 function getAllFromTable() {

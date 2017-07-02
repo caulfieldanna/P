@@ -1,0 +1,37 @@
+// {
+//     "require": {
+//         "symfony/routing": "^3.3",
+//         "symfony/http-kernel": "^3.3",
+//         "symfony/http-foundation": "^3.3"
+//     }
+// }
+
+{
+    "name": "course/shop",
+    "description": "shop",
+    "type": "project",
+    "authors": [
+        {
+            "name": "course",
+            "email": "frgyvu@gmail.com"
+        }
+    ],
+
+    "autoload": {
+        "psr-4": {
+            "Course\\Shop\\": "app/"
+        }
+    },
+
+    "repositories": [
+        {
+            "type":"git",
+            "url":"https://github.com/caulfieldanna/frame"
+
+        }
+    ],
+
+    "require": {
+        "sky/frame": "dev-master"
+    }
+}
